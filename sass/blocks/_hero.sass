@@ -1,0 +1,245 @@
+.hero
+  padding: 40px 0 66px 0
+  &-header
+    position: relative
+    height: 58px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 74px
+    &__menu
+      padding-top: 3px
+      display: flex
+      justify-content: space-between
+      align-items: start
+      height: 30px
+      &-link
+        font-weight: 500
+        font-size: 13px
+        line-height: 20px
+        color: $wht
+        text-decoration: none
+        &:hover
+          border-bottom: 2px $tx-decor solid
+          padding-bottom: 8px
+        &:not(:last-child)
+          margin-right: 75px
+    &__button
+      padding: 0
+      position: relative
+      width: 58px
+      height: 58px
+      border: 1.4px solid rgba(255, 255, 255, 0.1)
+      border-radius: 50%
+      background: transparent
+      &-line
+        width: 24px
+        height: 2px
+        background: rgba(255, 255, 255, 0.5)
+        border: none
+  &-product
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 78px
+    &__title
+      width: 441px
+      font-size: 90px
+      line-height: 90px
+      letter-spacing: -0.04em
+      margin: 0
+    &__prewiev
+      position: relative
+      &-backtext
+        position: absolute
+        top: 100px
+        left: -228px
+        color: rgba(255, 255, 255, 0.01)
+        font-weight: bold
+        font-size: 270px
+        line-height: 270px
+        letter-spacing: 0.01em
+        z-index: -3
+    &__details
+      display: flex
+      flex-direction: column
+      &-text
+        font-size: 20px
+        line-height: 24px
+        color: $milk
+        margin-bottom: 10px
+      &-price
+        font-weight: 500
+        font-size: 38px
+        line-height: 40px
+        margin-bottom: 21px
+      &-rating
+        width: 58px
+        display: flex
+        justify-content: space-between
+        margin-bottom: 9px
+      &-volume
+        font-size: 18px
+        line-height: 24px
+        color: $milk
+  &-info
+    display: flex
+    align-items: start
+    justify-content: start
+    margin-bottom: 100px
+    &__line
+      width: 78px
+      height: 2px
+      margin: 11px 20px 0 0
+      border: none
+      background: #C4C4C4
+    &__text
+      margin: 0
+      display: block
+      max-width: 353px
+      font-size: 18px
+      line-height: 30px
+      color: #FCFBFB
+      margin-right: 92px
+    &__button
+      padding: 20px 28px
+      background: $rose
+      border: none
+      border-radius: 50px
+      margin-right: 25px
+      &-text
+        font-weight: 500
+        font-size: 16px
+        line-height: 19px
+        color: $wht
+        &::after
+          margin-left: 9px
+          content: ''
+          display: inline-block
+          width: 10px
+          height: 10px
+          background: url(../img/plus.svg) no-repeat
+    &__special
+      border: none
+      border-radius: 50px
+      width: 60px
+      height: 60px
+      background: url(../img/play-button.svg) no-repeat center, url(../img/special.svg) no-repeat center
+  &-abstract
+    position: absolute
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 960px
+    height: 960px
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    z-index: -6
+    &__big
+      position: absolute
+      border-radius: 50%
+      width: 960px
+      height: 960px
+      left: 0
+      top: 0
+      background: linear-gradient(180deg, #684D42 0%, rgba(9, 9, 9, 0) 100%)
+      opacity: 0.02
+      backdrop-filter: blur(100px)
+    &__small
+      position: absolute
+      border-radius: 50%
+      width: 708px
+      height: 708px
+      background: #720D27
+      opacity: 0.4
+      filter: blur(500px)
+  &-components
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-content: stretch
+    &__item
+      width: 50%
+      display: flex
+      flex-direction: column
+      border: 1px solid #3A1B22
+      padding: 70px 0
+    &__item2, &__item3
+      margin: auto
+    &__item4
+      width: 175px
+      margin-left: auto
+    &__items1
+      border-left: none
+    &__items2
+      flex-shrink: 0.7
+    &__items4
+      flex-shrink: 0.9
+      border-right: none
+    &__num
+      font-weight: 500
+      font-size: 16px
+      line-height: 20px
+      color: $num
+      letter-spacing: 0.06em
+      margin-bottom: 8px
+    &__name
+      font-weight: 500
+      font-size: 24px
+      line-height: 40px
+      letter-spacing: 0.01em
+.abstract1
+  position: absolute
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 331px
+  height: 331px
+  top: -260px
+  left: -50px
+  z-index: -6
+  &__big1
+    position: absolute
+    border-radius: 50%
+    width: 330px
+    height: 330px
+    left: 0
+    top: 0
+    background: linear-gradient(180deg, #684D42 0%, rgba(9, 9, 9, 0) 100%)
+    opacity: 0.1
+  &__small1
+    position: absolute
+    border-radius: 50%
+    width: 243px
+    height: 243px
+    background: #720D27
+    opacity: 0.4
+    filter: blur(200px)
+.abstract2
+  position: absolute
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 331px
+  height: 331px
+  top: -223px
+  right: -181px
+  z-index: -6
+  &__big2
+    position: absolute
+    border-radius: 50%
+    width: 330px
+    height: 330px
+    left: 0
+    top: 0
+    background: linear-gradient(180deg, #684D42 0%, rgba(9, 9, 9, 0) 100%)
+    opacity: 0.1
+  &__small2
+    position: absolute
+    border-radius: 50%
+    width: 243px
+    height: 243px
+    background: #720D27
+    opacity: 0.4
+    filter: blur(200px)
