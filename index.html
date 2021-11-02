@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Parfume</title>
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+    rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <section class="hero">
@@ -130,6 +131,86 @@
       <!-- /.container  -->
     </section>
     <!-- /.hero -->
+    <section class="feature">
+      <div class="container">
+        <div class="feature-name">
+          <h2 class="feature-name__title">A Vanila Phrodisiac</h2>
+          <p class="feature-name__text">
+            Financial institutions provide financial services for members and as
+            middlemen between the savers and borrowers.
+          </p>
+        </div>
+        <!-- /.feature-name -->
+        <div class="feature-slider">
+          <div class="slider-buttons">
+            <div
+              class="slider-buttons__prev"
+            ></div>
+            <div
+              class="slider-buttons__next"
+            ></div>
+          </div>
+
+          <div class="feature-slider__slider slider">
+            <div class="feature-slider__swiper-container swiper-container">
+              <div class="feature-slider__border">
+                <div class="feature-slider__blure">
+                  <div class="feature-slider__circle"></div>
+                </div>
+              </div>
+              <div class="feature-slider__swiper-wrapper swiper-wrapper">
+                <div class="feature-slider__slide swiper-slide">
+                  <div class="feature-slider__card swiper-slide__card">
+                    <img
+                      src="./img/slide1.png"
+                      alt="slide"
+                      class="feature-slider__image"
+                    />
+                    <h3 class="feature-slider__title">ROSE DAMASCENA</h3>
+                    <p class="feature-slider__text">
+                      the rose of Castile, is a rose hybrid
+                    </p>
+                  </div>
+                </div>
+                <div class="feature-slider__slide swiper-slide">
+                  <div class="feature-slider__card swiper-slide__card">
+                    <img
+                      src="./img/slide2.png"
+                      alt="slide"
+                      class="feature-slider__image"
+                    />
+                    <h3 class="feature-slider__title">ROSE DAMASCENA</h3>
+                    <p class="feature-slider__text">
+                      more commonly known as the Damask rose.
+                    </p>
+                  </div>
+                </div>
+                <div class="feature-slider__slide swiper-slide">
+                  <div class="feature-slider__card swiper-slide__card">
+                    <img
+                      src="./img/slide3.png"
+                      alt="slide"
+                      class="feature-slider__image"
+                    />
+                    <h3 class="feature-slider__title">VANILLE</h3>
+                    <p class="feature-slider__text">
+                      Grown in Papua New Guinea from Tahitientis variety.
+                    </p>
+                  </div>
+                </div>
+                <!-- /.slides -->
+              </div>
+            </div>
+          </div>
+          <!--/.slider  -->
+        </div>
+        <!-- /.feature-slider -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.feature -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
