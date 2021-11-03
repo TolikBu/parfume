@@ -370,6 +370,7 @@ a, button, .button {
 
 .hero {
   padding: 40px 0 66px 0;
+  overflow: hidden;
 }
 
 .hero-header {
@@ -638,6 +639,10 @@ a, button, .button {
   padding: 70px 61px 70px 0;
   border: 1px solid #3A1B22;
   border-left: none;
+  -o-border-image: linear-gradient(to right, black, #3A1B22);
+     border-image: -webkit-gradient(linear, left top, right top, from(black), to(#3A1B22));
+     border-image: linear-gradient(to right, black, #3A1B22);
+  border-image-slice: 1;
 }
 
 .hero-components__item1:hover {
@@ -697,6 +702,10 @@ a, button, .button {
   border: 1px solid #3A1B22;
   border-left: none;
   border-right: none;
+  -o-border-image: linear-gradient(to left, black, #3A1B22);
+     border-image: -webkit-gradient(linear, right top, left top, from(black), to(#3A1B22));
+     border-image: linear-gradient(to left, black, #3A1B22);
+  border-image-slice: 1;
 }
 
 .hero-components__item4:hover {
@@ -897,10 +906,57 @@ a, button, .button {
   width: 222px;
   height: 205px;
   border-radius: 50%;
-  background: #FD709D;
+  background: #fff;
   opacity: 0.4;
   -webkit-filter: blur(150px);
           filter: blur(150px);
+}
+
+.feature .name {
+  position: relative;
+}
+
+.feature .name-abstract {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 331px;
+  height: 331px;
+  top: 0;
+  left: -140px;
+  z-index: -6;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.feature .name-abstract__big {
+  position: absolute;
+  border-radius: 50%;
+  width: 330px;
+  height: 330px;
+  left: 0;
+  top: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(center, at), color-stop(#684D42), to(rgba(9, 9, 9, 0)));
+  background: linear-gradient(at center, #684D42, rgba(9, 9, 9, 0));
+  opacity: 0.1;
+}
+
+.feature .name-abstract__small {
+  position: absolute;
+  border-radius: 50%;
+  width: 243px;
+  height: 243px;
+  background: #720D27;
+  opacity: 0.4;
+  -webkit-filter: blur(200px);
+          filter: blur(200px);
 }
 
 .slider-buttons {
@@ -913,6 +969,7 @@ a, button, .button {
   z-index: 10;
   width: 90px;
   height: 40px;
+  cursor: pointer;
 }
 
 .slider-buttons__prev {
@@ -926,7 +983,7 @@ a, button, .button {
   background-image: url(../img/button-prev.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #FFFFFF;
+  border-right: none;
 }
 
 .slider-buttons__next {

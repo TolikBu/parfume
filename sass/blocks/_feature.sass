@@ -1,6 +1,7 @@
 .feature
   position: relative
   padding: 84px 0 50px 0
+  // overflow: hidden
   &-name
     max-width: 536px
     margin-bottom: 100px
@@ -65,9 +66,39 @@
       width: 222px
       height: 205px
       border-radius: 50%
-      background: #FD709D
+      background: #fff
       opacity: 0.4
       filter: blur(150px)
+  .name
+    position: relative
+    &-abstract
+      position: absolute
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 331px
+      height: 331px
+      top: 0
+      left: -140px
+      z-index: -6
+      transform: rotate(-90deg)
+      &__big
+        position: absolute
+        border-radius: 50%
+        width: 330px
+        height: 330px
+        left: 0
+        top: 0
+        background: linear-gradient(at center, #684D42, rgba(9, 9, 9, 0))
+        opacity: 0.1
+      &__small
+        position: absolute
+        border-radius: 50%
+        width: 243px
+        height: 243px
+        background: #720D27
+        opacity: 0.4
+        filter: blur(200px)
 .slider
   &-buttons
     display: flex
@@ -77,6 +108,7 @@
     z-index: 10
     width: 90px
     height: 40px
+    cursor: pointer
     &__prev
       width: 45px
       height: 40px
@@ -88,7 +120,7 @@
       background-image: url(../img/button-prev.svg)
       background-repeat: no-repeat
       background-position: center
-      background-color: #FFFFFF
+      border-right: none
     &__next
       width: 45px
       height: 40px
