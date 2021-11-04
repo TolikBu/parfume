@@ -31,5 +31,5 @@ const serviceSlider = new Swiper(".service-slider__container", {
 });
 
 window.onbeforeunload = function () {
-  window.scrollTo(0, 10000000);
+  window.scrollTo(0, 1000000);
 };

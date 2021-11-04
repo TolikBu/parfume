@@ -370,8 +370,7 @@ a, button, .button {
 }
 
 img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
 }
 
 .hero {
@@ -904,6 +903,7 @@ img {
   -webkit-backdrop-filter: blur(130px);
           backdrop-filter: blur(130px);
   border-radius: 15px;
+  z-index: -6;
 }
 
 .feature-slider__circle {
@@ -913,9 +913,9 @@ img {
   width: 222px;
   height: 205px;
   border-radius: 50%;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(center, at), color-stop(#684D42), to(rgba(9, 9, 9, 0)));
-  background: linear-gradient(at center, #684D42, rgba(9, 9, 9, 0));
-  opacity: 0.1;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(center, at), color-stop(0%, #684D42), to(rgba(9, 9, 9, 0)));
+  background: linear-gradient(at center, #684D42 0%, rgba(9, 9, 9, 0) 100%);
+  z-index: -5;
 }
 
 .feature-slider__circle2 {
@@ -927,6 +927,7 @@ img {
   background: #720D27;
   -webkit-filter: blur(100px);
           filter: blur(100px);
+  z-index: -4;
 }
 
 .feature .name {
@@ -992,6 +993,7 @@ img {
   height: 40px;
   padding: 0;
   border-radius: 20px 0 0 20px;
+  background: rgba(255, 255, 255, 0.04);
   -webkit-backdrop-filter: blur(100px);
           backdrop-filter: blur(100px);
   border: 1px solid #392529;
@@ -1007,13 +1009,14 @@ img {
   padding: 0;
   border-radius: 0 20px 20px 0;
   border: 1px solid #392529;
+  background: rgba(255, 255, 255, 0.04);
   background-image: url(../img/button-next.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .service {
-  padding: 129px 0 50px 0;
+  padding: 129px 0 138px 0;
 }
 
 .service-name {
@@ -1147,6 +1150,12 @@ img {
   width: 90px;
   height: 40px;
   cursor: pointer;
+  border: 1px solid #392529;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(100px);
+          backdrop-filter: blur(100px);
+  overflow: hidden;
 }
 
 .service-slider__button-disabled {
@@ -1160,10 +1169,6 @@ img {
   width: 45px;
   height: 40px;
   padding: 0;
-  border-radius: 20px 0 0 20px;
-  -webkit-backdrop-filter: blur(100px);
-          backdrop-filter: blur(100px);
-  border: 1px solid #392529;
   background-image: url(../img/button-prev.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1174,10 +1179,185 @@ img {
   width: 45px;
   height: 40px;
   padding: 0;
-  border-radius: 0 20px 20px 0;
-  border: 1px solid #392529;
   background-image: url(../img/button-next.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.footer {
+  padding: 76px 0 45px 0;
+  overflow: hidden;
+}
+
+.footer-contacts {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 61px;
+}
+
+.footer-contacts__form {
+  width: 445px;
+  height: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 36px;
+}
+
+.footer-contacts__text {
+  margin-right: 36px;
+}
+
+.footer-contacts__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 7px 5px 30px;
+  background: #B3405D;
+  -webkit-box-shadow: 0px 12px 25px rgba(178, 64, 93, 0.1);
+          box-shadow: 0px 12px 25px rgba(178, 64, 93, 0.1);
+  border-radius: 30.5px;
+  outline: none;
+  border: none;
+  color: #fff;
+  margin-right: 6px;
+}
+
+.footer-contacts__button-text {
+  margin-right: 22px;
+}
+
+.footer-contacts__give {
+  padding: 20px 15px;
+  background: #CB5B78;
+  border-radius: 25px;
+}
+
+.footer-contacts__socials {
+  width: 81px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-contacts__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-copyrite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-copyrite__name {
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.footer-copyrite__menu {
+  padding-top: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  height: 30px;
+}
+
+.footer-copyrite__link {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-copyrite__link:hover {
+  border-bottom: 2px #B2405D solid;
+  padding-bottom: 8px;
+}
+
+.footer-copyrite__link:not(:last-child) {
+  margin-right: 75px;
+}
+
+.footer-copyrite__design {
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  color: #655E60;
+}
+
+.footer__big {
+  position: absolute;
+  width: 590px;
+  height: 590px;
+  border-radius: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -61px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(center, at), color-stop(0%, #684D42), to(rgba(9, 9, 9, 0)));
+  background: linear-gradient(at center, #684D42 0%, rgba(9, 9, 9, 0) 100%);
+  opacity: 0.3;
+  -webkit-backdrop-filter: blur(100px);
+          backdrop-filter: blur(100px);
+}
+
+.footer__small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  border-radius: 50%;
+  width: 436px;
+  height: 436px;
+  background: rgba(114, 13, 39, 0.4);
+  -webkit-filter: blur(500px);
+          filter: blur(500px);
 }
 /*# sourceMappingURL=style.css.map */
