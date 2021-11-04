@@ -1,0 +1,114 @@
+.service
+  padding: 129px 0 50px 0
+  // overflow: visible
+  &-name
+    max-width: 426px
+    &__text
+      color: $rose
+      font-size: 16px
+      line-height: 20px
+      letter-spacing: 0.6em
+      opacity: 0.9
+      margin-bottom: 15px
+    &__title
+      margin: 0
+      font-size: 60px
+      line-height: 70px
+      letter-spacing: -0.02em
+      margin-bottom: 115px
+  &-slider
+    position: relative
+    width: 1540px
+    &__container
+      overflow: visible
+    &__big
+      display: flex
+      align-items: center
+      position: absolute
+      width: 348px
+      height: 348px
+      left: 10px
+      border-radius: 50%
+      background: linear-gradient(at center, #684D42 0%, rgba(9, 9, 9, 0) 100%)
+      opacity: 0.01
+      z-index: -12
+    &__small
+      margin: auto
+      border-radius: 50%
+      width: 256.65px
+      height: 256.65px
+      background: #D02651
+      opacity: 0.3
+      filter: blur(250px)
+      z-index: -11
+    &__slide
+      width: 770px
+      height: 258px
+      display: flex
+      align-items: end
+    &__title
+      font-size: 50px
+      line-height: 66px
+      margin: 0
+      margin-right: 46px
+    &__image
+      width: 232px
+      margin-right: 46px
+    &__info
+      display: flex
+      flex-direction: column
+      min-width: 276px
+    &__infotitle
+      font-size: 26px
+      line-height: 40px
+      margin: 0
+      margin-bottom: 20px
+    &__infotext
+      max-width: 234px
+      font-size: 16px
+      line-height: 28px
+      letter-spacing: -0.01em
+      color: rgba(255, 255, 255, 0.25)
+      margin: 0
+      margin-bottom: 48px
+    &__infolink
+      font-size: 14px
+      line-height: 30px
+      letter-spacing: 0.06em
+      text-decoration-line: underline
+      color: $wht
+    &__buttons
+      display: flex
+      position: absolute
+      left: 1000px
+      top: -155px
+      z-index: 10
+      width: 90px
+      height: 40px
+      cursor: pointer
+    &__button
+      &-disabled
+        opacity: 0.35
+        cursor: auto
+        pointer-events: none
+        z-index: 100
+      &--prev
+        width: 45px
+        height: 40px
+        padding: 0
+        border-radius: 20px 0 0 20px
+        backdrop-filter: blur(100px)
+        border: 1px solid #392529
+        background-image: url(../img/button-prev.svg)
+        background-repeat: no-repeat
+        background-position: center
+        border-right: none
+      &--next
+        width: 45px
+        height: 40px
+        padding: 0
+        border-radius: 0 20px 20px 0
+        border: 1px solid #392529
+        background-image: url(../img/button-next.svg)
+        background-repeat: no-repeat
+        background-position: center

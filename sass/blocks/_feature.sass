@@ -29,6 +29,7 @@
       display: table-cell
       vertical-align: middle
     &__image
+      width: 180px
       margin-bottom: 40px
     &__title
       font-size: 20px
@@ -66,9 +67,17 @@
       width: 222px
       height: 205px
       border-radius: 50%
-      background: #fff
-      opacity: 0.4
-      filter: blur(150px)
+      background: linear-gradient(at center, #684D42, rgba(9, 9, 9, 0))
+      opacity: 0.1
+    &__circle2
+      display: block
+      margin: auto
+      width: 222px
+      height: 205px
+      border-radius: 50%
+      background: #720D27
+      // opacity: 0.4
+      filter: blur(100px)
   .name
     position: relative
     &-abstract
@@ -78,10 +87,9 @@
       justify-content: center
       width: 331px
       height: 331px
-      top: 0
-      left: -140px
-      z-index: -6
-      transform: rotate(-90deg)
+      top: -100px
+      left: -350px
+      z-index: -11
       &__big
         position: absolute
         border-radius: 50%
