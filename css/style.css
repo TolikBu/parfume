@@ -1204,19 +1204,22 @@ img {
 }
 
 .footer-contacts__form {
+  position: relative;
+}
+
+.footer-contacts__input {
   width: 445px;
   height: 72px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  padding-left: 30px;
+  padding-right: 210px;
   background: rgba(255, 255, 255, 0.03);
   border-radius: 36px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.55);
 }
 
 .footer-contacts__text {
@@ -1224,6 +1227,9 @@ img {
 }
 
 .footer-contacts__button {
+  position: absolute;
+  top: 6px;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1314,7 +1320,7 @@ img {
 }
 
 .footer-copyrite__link:hover {
-  border-bottom: 2px #B2405D solid;
+  border-bottom: 2px solid #B2405D;
   padding-bottom: 8px;
 }
 
@@ -1343,6 +1349,7 @@ img {
   opacity: 0.3;
   -webkit-backdrop-filter: blur(100px);
           backdrop-filter: blur(100px);
+  z-index: -11;
 }
 
 .footer__small {
@@ -1359,5 +1366,6 @@ img {
   background: rgba(114, 13, 39, 0.4);
   -webkit-filter: blur(500px);
           filter: blur(500px);
+  z-index: -10;
 }
 /*# sourceMappingURL=style.css.map */
