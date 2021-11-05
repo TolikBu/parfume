@@ -1172,7 +1172,7 @@ img {
   background-image: url(../img/button-prev.svg);
   background-repeat: no-repeat;
   background-position: center;
-  border-right: none;
+  border-right: 1px #392529 solid;
 }
 
 .service-slider__button--next {
@@ -1182,6 +1182,7 @@ img {
   background-image: url(../img/button-next.svg);
   background-repeat: no-repeat;
   background-position: center;
+  border-left: 1px #392529 solid;
 }
 
 .footer {
