@@ -1369,4 +1369,34 @@ img {
           filter: blur(500px);
   z-index: -10;
 }
+
+.background-modal {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: #080204;
+  opacity: 0.5;
+  z-index: 50;
+}
+
+.modal {
+  position: fixed;
+  top: 300px;
+  z-index: 51;
+  opacity: 1;
+}
+
+.modal__form {
+  padding: 60px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
 /*# sourceMappingURL=style.css.map */
