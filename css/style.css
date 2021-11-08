@@ -1371,6 +1371,7 @@ img {
 }
 
 .background-modal {
+  display: none;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -1382,14 +1383,20 @@ img {
 }
 
 .modal {
-  position: fixed;
-  top: 300px;
+  display: none;
+  position: absolute;
+  padding: 30px 30px;
+  top: 150px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: rgba(8, 2, 4, 0.7);
   z-index: 51;
   opacity: 1;
+  border-radius: 20px;
 }
 
 .modal__form {
-  padding: 60px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1397,6 +1404,49 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 20px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.modal__close {
+  width: 15px;
+  height: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.modal__input {
+  padding: 10px 10px;
+  color: #E7E6E6;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #E7E6E6;
+  margin-bottom: 15px;
+}
+
+.modal__button {
+  width: 100%;
+  padding: 10px 0;
+  background: #B2405D;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.modal__button:last-child {
+  margin: 0;
+}
+
+.modal__button:hover {
+  background: #FF678E;
+}
+
+.visible {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

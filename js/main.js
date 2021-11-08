@@ -1,3 +1,29 @@
+const menuBtn = document.querySelector(".hero-header__button");
+const modalBg = document.querySelector(".background-modal");
+const modal = document.querySelector(".modal");
+const modalClose = document.querySelector(".modal__close");
+
+menuBtn.addEventListener("click", () => {
+  modalBg.classList.add("visible");
+  modal.classList.add("visible");
+
+  modalClose.addEventListener("click", () => {
+    modalBg.classList.remove("visible");
+    modal.classList.remove("visible");
+  });
+  modalBg.addEventListener("click", () => {
+    modalBg.classList.remove("visible");
+    modal.classList.remove("visible");
+  });
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    modalBg.classList.remove("visible");
+    modal.classList.remove("visible");
+  }
+});
+
 const featureSlider = new Swiper(".feature-slider__swiper-container", {
   loop: true,
   slidesPerView: 3,

@@ -1,4 +1,5 @@
 .background-modal
+  display: none
   position: fixed
   bottom: 0
   left: 0
@@ -7,13 +8,49 @@
   background-color: $vine
   opacity: 0.5
   z-index: 50
+  
 .modal
-  position: fixed
-  top: 300px
+  display: none
+  position: absolute
+  // border: 1px solid red
+  padding: 30px 30px
+  top: 150px
+  left: 50%
+  transform: translateX(-50%)
+  background-color: rgba(8, 2, 4, 0.7)
   z-index: 51
   opacity: 1
+  border-radius: 20px
   &__form
-    padding: 60px 30px
     display: flex
     flex-direction: column
-    margin-bottom: 20px
+    align-items: end
+  &__close
+    width: 15px
+    height: 15px
+    margin-bottom: 15px
+    cursor: pointer
+  &__input
+    padding: 10px 10px
+    color: $milk
+    background: transparent
+    outline: none
+    border: none
+    border-bottom: 1px solid $milk
+    margin-bottom: 15px
+  &__button
+    width: 100%
+    padding: 10px 0
+    background: $rose
+    border: none
+    border-radius: 10px
+    font-size: 16px
+    line-height: 19px
+    color: $wht
+    margin-bottom: 15px
+    &:last-child
+      margin: 0
+    &:hover
+      background: $num
+.visible
+  display: block
