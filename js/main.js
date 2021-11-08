@@ -3,17 +3,25 @@ const modalBg = document.querySelector(".background-modal");
 const modal = document.querySelector(".modal");
 const modalClose = document.querySelector(".modal__close");
 
-menuBtn.addEventListener("click", () => {
-  modalBg.classList.add("visible");
-  modal.classList.add("visible");
+const dataHref = document.querySelectorAll("[data-href]");
 
-  modalClose.addEventListener("click", () => {
-    modalBg.classList.remove("visible");
-    modal.classList.remove("visible");
-  });
-  modalBg.addEventListener("click", () => {
-    modalBg.classList.remove("visible");
-    modal.classList.remove("visible");
+
+// menuBtn.addEventListener("click", () => {
+//   modalBg.classList.add("visible");
+//   modal.classList.add("visible");
+
+//   modalClose.addEventListener("click", () => {
+//     modalBg.classList.remove("visible");
+//     modal.classList.remove("visible");
+//   });
+//   modalBg.addEventListener("click", () => {
+//     modalBg.classList.remove("visible");
+//     modal.classList.remove("visible");
+//   });
+// });
+menuBtn.addEventListener("click", () => {
+  dataHref.forEach((event) => {
+    event.classList.add("visible")
   });
 });
 
